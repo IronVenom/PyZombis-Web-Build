@@ -1,0 +1,6 @@
+sphinx
+paver
+sphinxcontrib-paverutils
+pygments
+hieroglyph
+runestone
