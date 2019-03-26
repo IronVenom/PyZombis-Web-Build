@@ -4,3 +4,6 @@ sphinxcontrib-paverutils
 pygments
 hieroglyph
 runestone
+css
+bootstrap
+javascript
