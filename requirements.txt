@@ -5,5 +5,5 @@ pygments
 hieroglyph
 runestone
 css
-bootstrap
+twbs/bootstrap
 javascript
