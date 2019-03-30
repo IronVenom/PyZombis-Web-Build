@@ -32,6 +32,7 @@ Contents:
    lectures/TWP58
    lectures/TWP60
    lectures/TWP65
+   lectures/Quiz6
 
 
 ==================
