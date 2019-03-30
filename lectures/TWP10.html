@@ -119,14 +119,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'Pyzombisquiz';
+  eBookConfig.course = 'Pyzombiscodelens';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "unknown";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
   eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'Pyzombisquiz';
+  eBookConfig.basecourse = 'Pyzombiscodelens';
   eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
   eBookConfig.runestone_version = '3.3.2';
   eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
@@ -167,7 +167,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">Pyzombisintl</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">Pyzombiscodelens</a>
       </div>
     </div>
 
@@ -223,7 +223,7 @@
             
                 <li><a href='../index.html' aria-label="index-page">Table of Contents</a></li>
             
-            <li><a href='/runestone/static/Pyzombisquiz/genindex.html'>Book Index</a></li>
+            <li><a href='/runestone/static/Pyzombiscodelens/genindex.html'>Book Index</a></li>
             <li class="divider"></li>
             <li style="width: 240px;">
               <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
@@ -262,11 +262,11 @@
             <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
           </a>
           <ul class="dropdown-menu user-menu">
-            <li><a href='/runestone/static/Pyzombisquiz/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/Pyzombiscodelens/navhelp.html'>Navigation Help</a></li>
             <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
             <li class="divider"></li>
             <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
-            <li><a href='/runestone/default/reportabug?course=Pyzombisquiz&page=TWP10'>Report A Problem</a></li>
+            <li><a href='/runestone/default/reportabug?course=Pyzombiscodelens&page=TWP10'>Report A Problem</a></li>
           </ul>
         </li>
         <!-- end help menu dropdown -->
@@ -358,7 +358,53 @@
 <a class="reference internal image-reference" href="../_images/TWP10_002.png"><img alt="" src="../_images/TWP10_002.png" style="width: 22.859cm; height: 5.524cm;" /></a>
 <div class="section" id="id1">
 <h2>Condições<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP10_003.png"><img alt="" src="../_images/TWP10_003.png" style="width: 16.615cm; height: 2.142cm;" /></a>
+
+<div class="runestone" style="max-width: none;">
+<div class="alert alert-warning cd_section">
+<div id="image_1"></div>
+<p class="cl_caption"><span class="cl_caption_text"> (image_1)</span> </p>
+</div>
+<script type="text/javascript">
+var image_1_trace = {"code": "print(\"Bem vindo ao meu programa!\")\nprint(\"Volte sempre!\")", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "Bem vindo ao meu programa!\n"}, {"line": 2, "event": "return", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "Bem vindo ao meu programa!\nVolte sempre!\n"}]};
+var image_1_vis;
+
+$(document).ready(function() {
+    try {
+        image_1_vis = new ExecutionVisualizer('image_1',image_1_trace,
+                                    {embeddedMode: true,
+                                    verticalStack: false,
+                                    heightChangeCallback: redrawAllVisualizerArrows,
+                                    codeDivWidth: 500,
+                                    lang : 'py3'
+                                    });
+        attachLoggers(image_1_vis,'image_1');
+        styleButtons('image_1');
+        allVisualizers.push(image_1_vis);
+    } catch (e) {
+        console.log("Failed to Initialize CodeLens component image_1_vis" );
+        console.log(e.toString());
+    }
+
+});
+
+$(document).ready(function() {
+    $("#image_1_tracecheck").click(function() {
+        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'image_1'});
+    });
+});
+
+if (allVisualizers === undefined) {
+   var allVisualizers = [];
+}
+
+
+$(window).resize(function() {
+    if (image_1_vis) {
+        image_1_vis.redrawConnectors();
+    }
+});
+</script>
+</div>
 </div>
 <div class="section" id="id2">
 <h2>Condições<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
@@ -378,7 +424,53 @@
 <ul class="simple">
 <li>Ler dois valores inteiros e imprimir o maior deles</li>
 </ul>
-<a class="reference internal image-reference" href="../_images/TWP10_005.png"><img alt="" src="../_images/TWP10_005.png" style="width: 19.816cm; height: 5.158cm;" /></a>
+
+<div class="runestone" style="max-width: none;">
+<div class="alert alert-warning cd_section">
+<div id="image_2"></div>
+<p class="cl_caption"><span class="cl_caption_text"> (image_2)</span> </p>
+</div>
+<script type="text/javascript">
+var image_2_trace = {"code": "a = 8\nb = 5\nif a>b:\n        print(\"O promeiro numero e o maior!\")\nif b>a:\n        print(\"O segundo numero e o maior!\")", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"a": 8}, "ordered_globals": ["a"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"a": 8, "b": 5}, "ordered_globals": ["a", "b"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"a": 8, "b": 5}, "ordered_globals": ["a", "b"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"a": 8, "b": 5}, "ordered_globals": ["a", "b"], "stack_to_render": [], "heap": {}, "stdout": "O promeiro numero e o maior!\n"}, {"line": 5, "event": "return", "func_name": "<module>", "globals": {"a": 8, "b": 5}, "ordered_globals": ["a", "b"], "stack_to_render": [], "heap": {}, "stdout": "O promeiro numero e o maior!\n"}]};
+var image_2_vis;
+
+$(document).ready(function() {
+    try {
+        image_2_vis = new ExecutionVisualizer('image_2',image_2_trace,
+                                    {embeddedMode: true,
+                                    verticalStack: false,
+                                    heightChangeCallback: redrawAllVisualizerArrows,
+                                    codeDivWidth: 500,
+                                    lang : 'py3'
+                                    });
+        attachLoggers(image_2_vis,'image_2');
+        styleButtons('image_2');
+        allVisualizers.push(image_2_vis);
+    } catch (e) {
+        console.log("Failed to Initialize CodeLens component image_2_vis" );
+        console.log(e.toString());
+    }
+
+});
+
+$(document).ready(function() {
+    $("#image_2_tracecheck").click(function() {
+        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'image_2'});
+    });
+});
+
+if (allVisualizers === undefined) {
+   var allVisualizers = [];
+}
+
+
+$(window).resize(function() {
+    if (image_2_vis) {
+        image_2_vis.redrawConnectors();
+    }
+});
+</script>
+</div>
 </div>
 <div class="section" id="dois-pontos-e-identacao">
 <h2>Dois pontos e identação<a class="headerlink" href="#dois-pontos-e-identacao" title="Permalink to this headline">¶</a></h2>
@@ -389,7 +481,53 @@
 <li>Verificar se um carro é novo ou velho</li>
 <li>Se o carro tiver pelo menos três anos é novo</li>
 </ul>
-<a class="reference internal image-reference" href="../_images/TWP10_006.png"><img alt="" src="../_images/TWP10_006.png" style="width: 23.15cm; height: 4.444cm;" /></a>
+
+<div class="runestone" style="max-width: none;">
+<div class="alert alert-warning cd_section">
+<div id="image_3"></div>
+<p class="cl_caption"><span class="cl_caption_text"> (image_3)</span> </p>
+</div>
+<script type="text/javascript">
+var image_3_trace = {"code": "idade = 10\nif idade <= 3:\n        print(\"Seu carro e novo\")\nif idade > 3:\n        print(\"Seu carro e velho\")", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"idade": 10}, "ordered_globals": ["idade"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"idade": 10}, "ordered_globals": ["idade"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"idade": 10}, "ordered_globals": ["idade"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "return", "func_name": "<module>", "globals": {"idade": 10}, "ordered_globals": ["idade"], "stack_to_render": [], "heap": {}, "stdout": "Seu carro e velho\n"}]};
+var image_3_vis;
+
+$(document).ready(function() {
+    try {
+        image_3_vis = new ExecutionVisualizer('image_3',image_3_trace,
+                                    {embeddedMode: true,
+                                    verticalStack: false,
+                                    heightChangeCallback: redrawAllVisualizerArrows,
+                                    codeDivWidth: 500,
+                                    lang : 'py3'
+                                    });
+        attachLoggers(image_3_vis,'image_3');
+        styleButtons('image_3');
+        allVisualizers.push(image_3_vis);
+    } catch (e) {
+        console.log("Failed to Initialize CodeLens component image_3_vis" );
+        console.log(e.toString());
+    }
+
+});
+
+$(document).ready(function() {
+    $("#image_3_tracecheck").click(function() {
+        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'image_3'});
+    });
+});
+
+if (allVisualizers === undefined) {
+   var allVisualizers = [];
+}
+
+
+$(window).resize(function() {
+    if (image_3_vis) {
+        image_3_vis.redrawConnectors();
+    }
+});
+</script>
+</div>
 </div>
 <div class="section" id="id5">
 <h2>if<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
@@ -402,7 +540,53 @@ acima de 110.</li>
 </div>
 <div class="section" id="id6">
 <h2>if<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP10_007.png"><img alt="" src="../_images/TWP10_007.png" style="width: 20.928cm; height: 4.603cm;" /></a>
+
+<div class="runestone" style="max-width: none;">
+<div class="alert alert-warning cd_section">
+<div id="image_4"></div>
+<p class="cl_caption"><span class="cl_caption_text"> (image_4)</span> </p>
+</div>
+<script type="text/javascript">
+var image_4_trace = {"code": "v = 120\nif v > 110:\n        print(\"Voce foi multado!\")\n        multa = (v-110)*5\n        print(\"Valor da multa : R$ %5.2f \" % multa)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"v": 120}, "ordered_globals": ["v"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"v": 120}, "ordered_globals": ["v"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"v": 120}, "ordered_globals": ["v"], "stack_to_render": [], "heap": {}, "stdout": "Voce foi multado!\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"v": 120, "multa": 50}, "ordered_globals": ["v", "multa"], "stack_to_render": [], "heap": {}, "stdout": "Voce foi multado!\n"}, {"line": 5, "event": "return", "func_name": "<module>", "globals": {"v": 120, "multa": 50}, "ordered_globals": ["v", "multa"], "stack_to_render": [], "heap": {}, "stdout": "Voce foi multado!\nValor da multa : R$ 50.00 \n"}]};
+var image_4_vis;
+
+$(document).ready(function() {
+    try {
+        image_4_vis = new ExecutionVisualizer('image_4',image_4_trace,
+                                    {embeddedMode: true,
+                                    verticalStack: false,
+                                    heightChangeCallback: redrawAllVisualizerArrows,
+                                    codeDivWidth: 500,
+                                    lang : 'py3'
+                                    });
+        attachLoggers(image_4_vis,'image_4');
+        styleButtons('image_4');
+        allVisualizers.push(image_4_vis);
+    } catch (e) {
+        console.log("Failed to Initialize CodeLens component image_4_vis" );
+        console.log(e.toString());
+    }
+
+});
+
+$(document).ready(function() {
+    $("#image_4_tracecheck").click(function() {
+        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'image_4'});
+    });
+});
+
+if (allVisualizers === undefined) {
+   var allVisualizers = [];
+}
+
+
+$(window).resize(function() {
+    if (image_4_vis) {
+        image_4_vis.redrawConnectors();
+    }
+});
+</script>
+</div>
 </div>
 <div class="section" id="else">
 <h2>else<a class="headerlink" href="#else" title="Permalink to this headline">¶</a></h2>
@@ -410,7 +594,100 @@ acima de 110.</li>
 <li>O que fazer quando a condição do if é falsa?</li>
 <li>Os dois códigos abaixo fazem a mesma coisa:</li>
 </ul>
-<a class="reference internal image-reference" href="../_images/TWP10_008.png"><img alt="" src="../_images/TWP10_008.png" style="width: 20.736cm; height: 8.655cm;" /></a>
+
+<div class="runestone" style="max-width: none;">
+<div class="alert alert-warning cd_section">
+<div id="image_5"></div>
+<p class="cl_caption"><span class="cl_caption_text"> (image_5)</span> </p>
+</div>
+<script type="text/javascript">
+var image_5_trace = {"code": "idade = 1\nif idade <= 3:\n        print(\"Seu carro e novo\")\nif idade > 3:\n        print(\"Seu carro e velho\")", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"idade": 1}, "ordered_globals": ["idade"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"idade": 1}, "ordered_globals": ["idade"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"idade": 1}, "ordered_globals": ["idade"], "stack_to_render": [], "heap": {}, "stdout": "Seu carro e novo\n"}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"idade": 1}, "ordered_globals": ["idade"], "stack_to_render": [], "heap": {}, "stdout": "Seu carro e novo\n"}]};
+var image_5_vis;
+
+$(document).ready(function() {
+    try {
+        image_5_vis = new ExecutionVisualizer('image_5',image_5_trace,
+                                    {embeddedMode: true,
+                                    verticalStack: false,
+                                    heightChangeCallback: redrawAllVisualizerArrows,
+                                    codeDivWidth: 500,
+                                    lang : 'py3'
+                                    });
+        attachLoggers(image_5_vis,'image_5');
+        styleButtons('image_5');
+        allVisualizers.push(image_5_vis);
+    } catch (e) {
+        console.log("Failed to Initialize CodeLens component image_5_vis" );
+        console.log(e.toString());
+    }
+
+});
+
+$(document).ready(function() {
+    $("#image_5_tracecheck").click(function() {
+        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'image_5'});
+    });
+});
+
+if (allVisualizers === undefined) {
+   var allVisualizers = [];
+}
+
+
+$(window).resize(function() {
+    if (image_5_vis) {
+        image_5_vis.redrawConnectors();
+    }
+});
+</script>
+</div>
+
+<div class="runestone" style="max-width: none;">
+<div class="alert alert-warning cd_section">
+<div id="image_6"></div>
+<p class="cl_caption"><span class="cl_caption_text"> (image_6)</span> </p>
+</div>
+<script type="text/javascript">
+var image_6_trace = {"code": "idade = 6\nif idade <= 3:\n        print(\"Seu carro e novo\")\nelse:\n        print(\"Seu carro e velho\")", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"idade": 6}, "ordered_globals": ["idade"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"idade": 6}, "ordered_globals": ["idade"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "return", "func_name": "<module>", "globals": {"idade": 6}, "ordered_globals": ["idade"], "stack_to_render": [], "heap": {}, "stdout": "Seu carro e velho\n"}]};
+var image_6_vis;
+
+$(document).ready(function() {
+    try {
+        image_6_vis = new ExecutionVisualizer('image_6',image_6_trace,
+                                    {embeddedMode: true,
+                                    verticalStack: false,
+                                    heightChangeCallback: redrawAllVisualizerArrows,
+                                    codeDivWidth: 500,
+                                    lang : 'py3'
+                                    });
+        attachLoggers(image_6_vis,'image_6');
+        styleButtons('image_6');
+        allVisualizers.push(image_6_vis);
+    } catch (e) {
+        console.log("Failed to Initialize CodeLens component image_6_vis" );
+        console.log(e.toString());
+    }
+
+});
+
+$(document).ready(function() {
+    $("#image_6_tracecheck").click(function() {
+        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'image_6'});
+    });
+});
+
+if (allVisualizers === undefined) {
+   var allVisualizers = [];
+}
+
+
+$(window).resize(function() {
+    if (image_6_vis) {
+        image_6_vis.redrawConnectors();
+    }
+});
+</script>
+</div>
 </div>
 <div class="section" id="if-else">
 <h2>if / else<a class="headerlink" href="#if-else" title="Permalink to this headline">¶</a></h2>
@@ -427,7 +704,53 @@ sua conta de telefone.</li>
 </div>
 <div class="section" id="estruturas-aninhadas">
 <h2>Estruturas aninhadas<a class="headerlink" href="#estruturas-aninhadas" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP10_010.png"><img alt="" src="../_images/TWP10_010.png" style="width: 22.859cm; height: 7.363cm;" /></a>
+
+<div class="runestone" style="max-width: none;">
+<div class="alert alert-warning cd_section">
+<div id="image_7"></div>
+<p class="cl_caption"><span class="cl_caption_text"> (image_7)</span> </p>
+</div>
+<script type="text/javascript">
+var image_7_trace = {"code": "minutos = 800\nif minutos < 200:\n        preco = 0.20\nelse:\n        if minutos <= 400:\n                preco = 0.18\n        else:\n                preco = 0.15\nprint(\"Conta telefonica : R$%6.2f\"%(minutos*preco))", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"minutos": 800}, "ordered_globals": ["minutos"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"minutos": 800}, "ordered_globals": ["minutos"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"minutos": 800}, "ordered_globals": ["minutos"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"minutos": 800, "preco": 0.15}, "ordered_globals": ["minutos", "preco"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 9, "event": "return", "func_name": "<module>", "globals": {"minutos": 800, "preco": 0.15}, "ordered_globals": ["minutos", "preco"], "stack_to_render": [], "heap": {}, "stdout": "Conta telefonica : R$120.00\n"}]};
+var image_7_vis;
+
+$(document).ready(function() {
+    try {
+        image_7_vis = new ExecutionVisualizer('image_7',image_7_trace,
+                                    {embeddedMode: true,
+                                    verticalStack: false,
+                                    heightChangeCallback: redrawAllVisualizerArrows,
+                                    codeDivWidth: 500,
+                                    lang : 'py3'
+                                    });
+        attachLoggers(image_7_vis,'image_7');
+        styleButtons('image_7');
+        allVisualizers.push(image_7_vis);
+    } catch (e) {
+        console.log("Failed to Initialize CodeLens component image_7_vis" );
+        console.log(e.toString());
+    }
+
+});
+
+$(document).ready(function() {
+    $("#image_7_tracecheck").click(function() {
+        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'image_7'});
+    });
+});
+
+if (allVisualizers === undefined) {
+   var allVisualizers = [];
+}
+
+
+$(window).resize(function() {
+    if (image_7_vis) {
+        image_7_vis.redrawConnectors();
+    }
+});
+</script>
+</div>
 </div>
 <div class="section" id="id7">
 <h2>Estruturas aninhadas<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
@@ -445,14 +768,106 @@ tarifa é de R$ 0,08 quando você utiliza mais que 800 minutos</li>
 </div>
 <div class="section" id="id9">
 <h2>Estruturas aninhadas<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP10_015.png"><img alt="" src="../_images/TWP10_015.png" style="width: 22.859cm; height: 10.523cm;" /></a>
+
+<div class="runestone" style="max-width: none;">
+<div class="alert alert-warning cd_section">
+<div id="image_8"></div>
+<p class="cl_caption"><span class="cl_caption_text"> (image_8)</span> </p>
+</div>
+<script type="text/javascript">
+var image_8_trace = {"code": "minutos = 1000\nif minutos < 200:\n        preco = 0.2\nelse:\n        if minutos <= 400:\n                preco = 0.18\n        else:\n                if minutos <= 800:\n                        preco = 0.15\n                else:\n                        preco = 0.08\nprint(\"Conta telefonica : R$%6.2f\"%(minutos*preco))", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"minutos": 1000}, "ordered_globals": ["minutos"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"minutos": 1000}, "ordered_globals": ["minutos"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"minutos": 1000}, "ordered_globals": ["minutos"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 11, "event": "step_line", "func_name": "<module>", "globals": {"minutos": 1000}, "ordered_globals": ["minutos"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 12, "event": "step_line", "func_name": "<module>", "globals": {"minutos": 1000, "preco": 0.08}, "ordered_globals": ["minutos", "preco"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 12, "event": "return", "func_name": "<module>", "globals": {"minutos": 1000, "preco": 0.08}, "ordered_globals": ["minutos", "preco"], "stack_to_render": [], "heap": {}, "stdout": "Conta telefonica : R$ 80.00\n"}]};
+var image_8_vis;
+
+$(document).ready(function() {
+    try {
+        image_8_vis = new ExecutionVisualizer('image_8',image_8_trace,
+                                    {embeddedMode: true,
+                                    verticalStack: false,
+                                    heightChangeCallback: redrawAllVisualizerArrows,
+                                    codeDivWidth: 500,
+                                    lang : 'py3'
+                                    });
+        attachLoggers(image_8_vis,'image_8');
+        styleButtons('image_8');
+        allVisualizers.push(image_8_vis);
+    } catch (e) {
+        console.log("Failed to Initialize CodeLens component image_8_vis" );
+        console.log(e.toString());
+    }
+
+});
+
+$(document).ready(function() {
+    $("#image_8_tracecheck").click(function() {
+        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'image_8'});
+    });
+});
+
+if (allVisualizers === undefined) {
+   var allVisualizers = [];
+}
+
+
+$(window).resize(function() {
+    if (image_8_vis) {
+        image_8_vis.redrawConnectors();
+    }
+});
+</script>
+</div>
 </div>
 <div class="section" id="elif">
 <h2>elif<a class="headerlink" href="#elif" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>A cláusula elif substitui um par else if</li>
 </ul>
-<a class="reference internal image-reference" href="../_images/TWP10_016.png"><img alt="" src="../_images/TWP10_016.png" style="width: 22.969cm; height: 9cm;" /></a>
+
+<div class="runestone" style="max-width: none;">
+<div class="alert alert-warning cd_section">
+<div id="image_9"></div>
+<p class="cl_caption"><span class="cl_caption_text"> (image_9)</span> </p>
+</div>
+<script type="text/javascript">
+var image_9_trace = {"code": "minutos = 1000\nif minutos < 200:\n        preco = 0.2\nelif minutos <= 400:\n        preco = 0.18\nelif minutos <= 800:\n        preco = 0.15\nelse:\n        preco = 0.08\nprint(\"Costa telefonica : R$%6.2f\"%(minutos*preco))", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"minutos": 1000}, "ordered_globals": ["minutos"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"minutos": 1000}, "ordered_globals": ["minutos"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"minutos": 1000}, "ordered_globals": ["minutos"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"minutos": 1000}, "ordered_globals": ["minutos"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"minutos": 1000, "preco": 0.08}, "ordered_globals": ["minutos", "preco"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 10, "event": "return", "func_name": "<module>", "globals": {"minutos": 1000, "preco": 0.08}, "ordered_globals": ["minutos", "preco"], "stack_to_render": [], "heap": {}, "stdout": "Costa telefonica : R$ 80.00\n"}]};
+var image_9_vis;
+
+$(document).ready(function() {
+    try {
+        image_9_vis = new ExecutionVisualizer('image_9',image_9_trace,
+                                    {embeddedMode: true,
+                                    verticalStack: false,
+                                    heightChangeCallback: redrawAllVisualizerArrows,
+                                    codeDivWidth: 500,
+                                    lang : 'py3'
+                                    });
+        attachLoggers(image_9_vis,'image_9');
+        styleButtons('image_9');
+        allVisualizers.push(image_9_vis);
+    } catch (e) {
+        console.log("Failed to Initialize CodeLens component image_9_vis" );
+        console.log(e.toString());
+    }
+
+});
+
+$(document).ready(function() {
+    $("#image_9_tracecheck").click(function() {
+        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'image_9'});
+    });
+});
+
+if (allVisualizers === undefined) {
+   var allVisualizers = [];
+}
+
+
+$(window).resize(function() {
+    if (image_9_vis) {
+        image_9_vis.redrawConnectors();
+    }
+});
+</script>
+</div>
 </div>
 <div class="section" id="lista-de-exercicios-again">
 <h2>Lista de Exercícios “again”<a class="headerlink" href="#lista-de-exercicios-again" title="Permalink to this headline">¶</a></h2>
