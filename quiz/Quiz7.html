@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Desenvolvimento Web Intro &#8212; Runestone Interactive Overview</title>
+    <title>Quiz - 7 &#8212; Runestone Interactive Overview</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -106,8 +106,8 @@
     <script type="text/javascript" src="../_static/presenter_mode.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Quiz - 6" href="../quiz/Quiz6.html" />
-    <link rel="prev" title="Pygame" href="TWP60.html" />
+    <link rel="next" title="Quiz - 9" href="Quiz9.html" />
+    <link rel="prev" title="Quiz - 6" href="Quiz6.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0' name='viewport' />
@@ -265,7 +265,7 @@
             <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
             <li class="divider"></li>
             <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
-            <li><a href='/runestone/default/reportabug?course=PyZombis&page=TWP65'>Report A Problem</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombis&page=Quiz7'>Report A Problem</a></li>
           </ul>
         </li>
         <!-- end help menu dropdown -->
@@ -286,24 +286,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Desenvolvimento Web Intro</a><ul>
-<li><a class="reference internal" href="#requisicoes-e-respostas">Requisições e respostas</a></li>
-<li><a class="reference internal" href="#desenvolvimento-web">Desenvolvimento Web</a></li>
-<li><a class="reference internal" href="#web2py">Web2py</a></li>
-<li><a class="reference internal" href="#id1">Web2py</a></li>
-<li><a class="reference internal" href="#hello-world">Hello World</a></li>
-<li><a class="reference internal" href="#id2">Hello World</a></li>
-<li><a class="reference internal" href="#id3">Hello World</a></li>
-<li><a class="reference internal" href="#id4">Hello World</a></li>
-<li><a class="reference internal" href="#contar-visitantes">Contar visitantes</a></li>
-<li><a class="reference internal" href="#id5">Contar visitantes</a></li>
-<li><a class="reference internal" href="#duas-paginas">Duas páginas</a></li>
-<li><a class="reference internal" href="#id6">Duas páginas</a></li>
-<li><a class="reference internal" href="#id7">Duas páginas</a></li>
-<li><a class="reference internal" href="#id8">Duas páginas</a></li>
-<li><a class="reference internal" href="#appliances">Appliances</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#">Quiz - 7</a></li>
 </ul>
 </ul>
 </li>
@@ -311,14 +294,14 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Pygame" data-toggle="tooltip">
-    <a href="TWP60.html" >
+  <li id="relations-prev" title="Previous Chapter - Quiz - 6" data-toggle="tooltip">
+    <a href="Quiz6.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Quiz - 6' data-toggle="tooltip" >              
-    <a href="../quiz/Quiz6.html" >
+  <li id="relations-next" title='Next Chapter - Quiz - 9' data-toggle="tooltip" >              
+    <a href="Quiz9.html" >
         <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
   </li>
@@ -348,255 +331,355 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="desenvolvimento-web-intro">
-<h1>Desenvolvimento Web Intro<a class="headerlink" href="#desenvolvimento-web-intro" title="Permalink to this headline">¶</a></h1>
-<a class="reference internal image-reference" href="../_images/TWP10_001.jpeg"><img alt="" class="align-center" src="../_images/TWP10_001.jpeg" style="width: 9.258cm; height: 14.925cm;" /></a>
-<div class="section" id="requisicoes-e-respostas">
-<h2>Requisições e respostas<a class="headerlink" href="#requisicoes-e-respostas" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP65_001.jpg"><img alt="" class="align-center" src="../_images/TWP65_001.jpg" style="width: 16.053cm; height: 15.139cm;" /></a>
-<a class="reference internal image-reference" href="../_images/TWP65_002.jpg"><img alt="" class="align-center" src="../_images/TWP65_002.jpg" style="width: 15.601cm; height: 16.017cm;" /></a>
+  <div class="section" id="quiz-7">
+<h1>Quiz - 7<a class="headerlink" href="#quiz-7" title="Permalink to this headline">¶</a></h1>
+
+<div data-childcomponent="multstring" class="runestone explainer ac_section alert alert-warning">
+<p>A. multstring
+seja uma string s e um inteiro positivo n <br />
+retorna uma string com n cópias da string original <br />
+multstring(‘Hi’, 2) -&gt; ‘HiHi’ <br /></p>
+
+<textarea data-component="activecode" id=multstring data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''     
+          >
+def multstring(s,n):
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(multstring('Hi', 2), 'HiHi',"Esperado: HiHi")
+        self.assertEqual(multstring('Hi', 3), 'HiHiHi',"Esperado: HiHiHi")
+        self.assertEqual(multstring('Hi', 1), 'Hi',"Esperado: Hi")
+        self.assertEqual(multstring('Hi', 0), '',"Esperado: ''")
+        self.assertEqual(multstring('Hi', 5), 'HiHiHiHiHi',"Esperado: HiHiHiHiHi")
+        self.assertEqual(multstring('Oh Boy!', 2), 'Oh Boy!Oh Boy!',"Esperado: Oh Boy!Oh Boy!")
+        self.assertEqual(multstring('x', 4), 'xxxx',"Esperado: xxxx")
+        self.assertEqual(multstring('', 4), '',"Esperado: ''")
+        self.assertEqual(multstring('code', 2), 'codecode',"Esperado: codecode")
+        self.assertEqual(multstring('code', 3), 'codecodecode',"Esperado: codecodecode")
+
+myTests().main()
+</textarea>
 </div>
-<div class="section" id="desenvolvimento-web">
-<h2>Desenvolvimento Web<a class="headerlink" href="#desenvolvimento-web" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>“Python: a única linguagem com mais frameworks web do que keywords”</p></li>
-<li><p>Frameworks: Plone, Django, Web2py, Pyramid</p></li>
-<li><p>Micro Frameworks: CherryPy, Bottle, Flask</p></li>
-<li><p>WSGI (Web Server Gateway Interface)</p>
-<ul>
-<li><p>Padrões de acesso e comunicação entre servidores Web e aplicações Python</p></li>
-<li><p>Não é J2EE ;-)</p></li>
-</ul>
-</li>
-</ul>
+
+<div data-childcomponent="string_splosion" class="runestone explainer ac_section alert alert-warning">
+<p>B. string_splosion <br />
+string_splosion(‘Code’) -&gt; ‘CCoCodCode’ <br />
+string_splosion(‘abc’) -&gt; ‘aababc’ <br />
+string_splosion(‘ab’) -&gt; ‘aab’ <br /></p>
+
+<textarea data-component="activecode" id=string_splosion data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''     
+          >
+def string_splosion(s):
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(string_splosion('Code'), 'CCoCodCode',"Esperado: CCoCodCode")
+        self.assertEqual(string_splosion('abc'), 'aababc',"Esperado: aababc")
+        self.assertEqual(string_splosion('ab'), 'aab',"Esperado: aab")
+        self.assertEqual(string_splosion('x'), 'x',"Esperado: x")
+        self.assertEqual(string_splosion('fade'), 'ffafadfade',"Esperado: ffafadfade")
+        self.assertEqual(string_splosion('There'), 'TThTheTherThere',"Esperado: TThTheTherThere")
+        self.assertEqual(string_splosion('Kitten'), 'KKiKitKittKitteKitten',"Esperado: KKiKitKittKitteKitten")
+        self.assertEqual(string_splosion('Bye'), 'BByBye',"Esperado: BByBye")
+        self.assertEqual(string_splosion('Good'), 'GGoGooGood',"Esperado: GGoGooGood")
+        self.assertEqual(string_splosion('Bad'), 'BBaBad',"Esperado: BBaBad")
+
+
+myTests().main()
+</textarea>
 </div>
-<div class="section" id="web2py">
-<h2>Web2py<a class="headerlink" href="#web2py" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>InfoWorld: best full-stack Python framework</p></li>
-<li><p>Bossie: Best Open Source Development Software</p></li>
-<li><p>MVC:</p>
-<ul>
-<li><p>Modelo: dados</p></li>
-<li><p>Controladores: regras do negócio</p></li>
-<li><p>Visões: apresentação</p></li>
-</ul>
-</li>
-<li><p>Autocontido == full-stack framework</p></li>
-<li><p>Seguro</p></li>
-<li><p>DAL (Data Access Layer)</p></li>
-<li><p>Deploy rápido e distribuição fácil</p></li>
-</ul>
+
+<div data-childcomponent="array_count9" class="runestone explainer ac_section alert alert-warning">
+<p>C. array_count9 <br />
+conta quantas vezes aparece o 9 numa lista nums <br /></p>
+
+<textarea data-component="activecode" id=array_count9 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''     
+          >
+def array_count9(nums):
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(array_count9([1, 99, 9]), 1,"Esperado: 1")
+        self.assertEqual(array_count9([1, 9, 9]), 2,"Esperado: 2")
+        self.assertEqual(array_count9([1, 9, 9, 3, 9]), 3,"Esperado: 3")
+        self.assertEqual(array_count9([1, 2, 3]), 0,"Esperado: 0")
+        self.assertEqual(array_count9([1, 2, 3]), 0,"Esperado: 0")
+        self.assertEqual(array_count9([4, 2, 4, 3, 1]), 0,"Esperado: 0")
+        self.assertEqual(array_count9([9, 2, 99, 3, 1]), 1,"Esperado: 1")
+
+
+myTests().main()
+</textarea>
 </div>
-<div class="section" id="id1">
-<h2>Web2py<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Princípios Python</p>
-<ul>
-<li><p>DRY – Don’t Repeat Yourself</p></li>
-<li><p>Deve existir apenas uma única maneira óbvia de fazer algo</p></li>
-<li><p>Explícito é melhor que implícito (não segue)</p></li>
-</ul>
-</li>
-</ul>
+
+<div data-childcomponent="array_front9" class="runestone explainer ac_section alert alert-warning">
+<p>D. array_front9 <br />
+verifica se pelo menos um dos quatro primeiros é nove <br />
+array_front9([1, 2, 9, 3, 4]) -&gt; True <br />
+array_front9([1, 2, 3, 4, 9]) -&gt; False <br />
+array_front9([1, 2, 3, 4, 5]) -&gt; False <br /></p>
+
+<textarea data-component="activecode" id=array_front9 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''     
+          >
+def array_front9(nums):
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(array_front9([1, 2, 9, 3, 4]), True,"Esperado: True")
+        self.assertEqual(array_front9([1, 2, 3, 4, 9]), False,"Esperado: False")
+        self.assertEqual(array_front9([1, 2, 3, 4, 5]), False,"Esperado: False")
+        self.assertEqual(array_front9([9, 2, 3]), True,"Esperado: True")
+        self.assertEqual(array_front9([1, 9, 9]), True,"Esperado: True")
+        self.assertEqual(array_front9([1, 2, 3]), False,"Esperado: False")
+        self.assertEqual(array_front9([1, 9]), True,"Esperado: True")
+        self.assertEqual(array_front9([5, 5]), False,"Esperado: False")
+        self.assertEqual(array_front9([2]), False,"Esperado: False")
+        self.assertEqual(array_front9([9]), True,"Esperado: True")
+        self.assertEqual(array_front9([]), False,"Esperado: False")
+        self.assertEqual(array_front9([3, 9, 2, 3, 3]), True,"Esperado: True")
+
+
+
+
+myTests().main()
+</textarea>
 </div>
-<div class="section" id="hello-world">
-<h2>Hello World<a class="headerlink" href="#hello-world" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Habilitar a opção “Não usar servidor proxy para servidores locais”</p></li>
-<li><p>web2py.exe no diretório descompactado</p></li>
-<li><p>Definir uma senha para administrador</p></li>
-<li><p>Clicar em “Administrative Interface”</p></li>
-<li><p>Coloque a senha que você definiu</p></li>
-<li><p>Três opções: admin, examples e welcome</p></li>
-<li><p>Depois iremos aprender a utilizar appliances</p></li>
-</ul>
+
+<div data-childcomponent="hello_name" class="runestone explainer ac_section alert alert-warning">
+<p>E. hello_name <br />
+seja uma string name <br />
+hello_name(‘Bob’) -&gt; ‘Hello Bob!’ <br />
+hello_name(‘Alice’) -&gt; ‘Hello Alice!’ <br />
+hello_name(‘X’) -&gt; ‘Hello X!’ <br /></p>
+
+<textarea data-component="activecode" id=hello_name data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''     
+          >
+def hello_name(name):
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(hello_name('Bob'), 'Hello Bob!',"Esperado: Hello Bob!")
+        self.assertEqual(hello_name('Alice'), 'Hello Alice!',"Esperado: Hello Alice!")
+        self.assertEqual(hello_name('X'), 'Hello X!',"Esperado: Hello X!")
+        self.assertEqual(hello_name('Hello'), 'Hello Hello!',"Esperado: Hello Hello!")
+
+
+myTests().main()
+</textarea>
 </div>
-<div class="section" id="id2">
-<h2>Hello World<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Nova aplicação básica: “Hello World”</p></li>
-<li><p>Editar o controlador default.py</p></li>
-</ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
-  <span class="k">return</span> <span class="s2">&quot;Minha primeira mensagem&quot;</span>
-</pre></div>
+
+<div data-childcomponent="make_tags" class="runestone explainer ac_section alert alert-warning">
+<p>F. make_tags <br />
+make_tags(‘i’, ‘Yay’), ‘&lt;i&gt;Yay&lt;/i&gt;’ <br />
+make_tags(‘i’, ‘Hello’), ‘&lt;i&gt;Hello&lt;/i&gt;’ <br />
+make_tags(‘cite’, ‘Yay’), ‘&lt;cite&gt;Yay&lt;/cite&gt;’ <br /></p>
+
+<textarea data-component="activecode" id=make_tags data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''     
+          >
+def make_tags(tag,word):
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(make_tags('i', 'Yay'), '<i>Yay</i>',"Esperado: <i>Yay</i>")
+        self.assertEqual(make_tags('i', 'Hello'), '<i>Hello</i>',"Esperado:<i>Hello</i>")
+        self.assertEqual(make_tags('cite', 'Yay'), '<cite>Yay</cite>',"Esperado: <cite>Yay</cite>")
+        self.assertEqual(make_tags('address', 'here'), '<address>here</address>',"Esperado: <address>here</address>")
+        self.assertEqual(make_tags('body', 'Heart'), '<body>Heart</body>',"Esperado: <body>Heart</body>")
+        self.assertEqual(make_tags('i', 'i'), '<i>i</i>',"Esperado: <i>i</i>")
+        self.assertEqual(make_tags('i', ''), '<i></i>',"Esperado: <i></i>")
+
+
+myTests().main()
+</textarea>
 </div>
-<ul class="simple">
-<li><p>ctrl+S</p></li>
-<li><p>Voltar e clicar no Hello World</p></li>
-</ul>
+
+<div data-childcomponent="extra_end" class="runestone explainer ac_section alert alert-warning">
+<p>G. extra_end <br />
+seja um string s com no mínimo duas letras <br />
+retorna três vezes as duas últimas letras <br />
+extra_end(‘Hello’), ‘lololo’ <br />
+extra_end(‘ab’), ‘ababab’ <br />
+extra_end(‘Hi’), ‘HiHiHi’  <br /></p>
+
+<textarea data-component="activecode" id=extra_end data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''     
+          >
+def extra_end(s):
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(extra_end('Hello'), 'lololo',"Esperado: lololo")
+        self.assertEqual(extra_end('ab'), 'ababab',"Esperado: ababab")
+        self.assertEqual(extra_end('Hi'), 'HiHiHi',"Esperado: HiHiHi")
+        self.assertEqual(extra_end('Candy'), 'dydydy',"Esperado: dydydy")
+        self.assertEqual(extra_end('Code'), 'dedede',"Esperado: dedede")
+
+
+
+myTests().main()
+</textarea>
 </div>
-<div class="section" id="id3">
-<h2>Hello World<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Editar novamente o controlador default.py</p></li>
-</ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
-  <span class="k">return</span> <span class="nb">dict</span><span class="p">(</span><span class="n">msg</span><span class="o">=</span><span class="s2">&quot;FATEC SJC&quot;</span><span class="p">)</span>
-</pre></div>
+
+<div data-childcomponent="first_half" class="runestone explainer ac_section alert alert-warning">
+<p>H. first_half <br />
+seja uma string s <br />
+retorna a primeira metade da string <br />
+first_half(‘WooHoo’) -&gt; ‘Woo’ <br />
+first_half(‘HelloThere’) -&gt; ‘Hello’ <br />
+first_half(‘abcdef’) -&gt; ‘abc’ <br /></p>
+
+<textarea data-component="activecode" id=first_half data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''     
+          >
+def first_half(s):
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(first_half('WooHoo'), 'Woo',"Esperado: Woo")
+        self.assertEqual(first_half('HelloThere'), 'Hello',"Esperado: Hello")
+        self.assertEqual(first_half('abcdef'), 'abc',"Esperado: abc")
+        self.assertEqual(first_half(''), '',"Esperado: ")
+        self.assertEqual(first_half('ab'), 'a',"Esperado: a")
+        self.assertEqual(first_half('0123456789'), '01234',"Esperado: 01234")
+        self.assertEqual(first_half('kitten'), 'kit',"Esperado: kit")
+
+
+myTests().main()
+</textarea>
 </div>
-<ul class="simple">
-<li><p>ctrl+S</p></li>
-<li><p>Agora vamos editar a visão default/index</p></li>
-</ul>
+
+<div data-childcomponent="sem_pontas" class="runestone explainer ac_section alert alert-warning">
+<p>I. sem_pontas <br />
+seja uma string s de pelo menos dois caracteres <br />
+retorna uma string sem o primeiro e último caracter <br />
+without_end(‘Hello’) -&gt; ‘ell’ <br />
+without_end(‘python’) -&gt; ‘ytho’ <br />
+without_end(‘coding’) -&gt; ‘odin’ <br /></p>
+
+<textarea data-component="activecode" id=sem_pontas data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''     
+          >
+def sem_pontas(s):
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(sem_pontas('Hello'), 'ell',"Esperado: ell")
+        self.assertEqual(sem_pontas('Python'), 'ytho',"Esperado: ytho")
+        self.assertEqual(sem_pontas('coding'), 'odin',"Esperado: odin")
+        self.assertEqual(sem_pontas('code'), 'od',"Esperado: od")
+        self.assertEqual(sem_pontas('ab'), '',"Esperado: ")
+        self.assertEqual(sem_pontas('Chocolate!'), 'hocolate',"Esperado: hocolate")
+        self.assertEqual(sem_pontas('kitten'), 'itte',"Esperado: itte")
+        self.assertEqual(sem_pontas('woohoo'), 'ooho',"Esperado: ooho")
+
+
+myTests().main()
+</textarea>
 </div>
-<div class="section" id="id4">
-<h2>Hello World<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Apagar tudo e trocar na visão default/index</p></li>
-</ul>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
 
-  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<div data-childcomponent="roda2" class="runestone explainer ac_section alert alert-warning">
+<p>J. roda2 <br />
+rodar uma string s duas posições <br />
+a string possui pelo menos 2 caracteres <br />
+left2(‘Hello’) -&gt; ‘lloHe’ <br />
+left2(‘Hi’) -&gt; ‘Hi’ <br /></p>
 
-  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<textarea data-component="activecode" id=roda2 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''     
+          >
+def roda2(s):
 
-    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>{{=msg}}<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
 
-  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>ctrl+S</p></li>
-</ul>
-</div>
-<div class="section" id="contar-visitantes">
-<h2>Contar visitantes<a class="headerlink" href="#contar-visitantes" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Editar controlador default.py</p></li>
-</ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+====
+from unittest.gui import TestCaseGui
 
-  <span class="k">if</span> <span class="ow">not</span> <span class="n">session</span><span class="o">.</span><span class="n">counter</span><span class="p">:</span>
+class myTests(TestCaseGui):
 
-    <span class="n">session</span><span class="o">.</span><span class="n">counter</span> <span class="o">=</span> <span class="mi">1</span>
+    def testOne(self):
+        self.assertEqual(roda2('Hello'), 'lloHe',"Esperado: lloHe")
+        self.assertEqual(roda2('python'), 'thonpy',"Esperado: thonpy")
+        self.assertEqual(roda2('Hi'), 'Hi',"Esperado: Hi")
+        self.assertEqual(roda2('code'), 'deco',"Esperado: deco")
+        self.assertEqual(roda2('cat'), 'tca',"Esperado: tca")
+        self.assertEqual(roda2('12345'), '34512',"Esperado: 34512")
+        self.assertEqual(roda2('Chocolate'), 'ocolateCh',"Esperado: ocolateCh")
+        self.assertEqual(roda2('bricks'), 'icksbr',"Esperado: icksbr")
 
-  <span class="k">else</span><span class="p">:</span>
 
-    <span class="n">session</span><span class="o">.</span><span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
 
-  <span class="k">return</span> <span class="nb">dict</span><span class="p">(</span><span class="n">msg</span><span class="o">=</span><span class="s2">&quot;Python Zumbi&quot;</span><span class="p">,</span> <span class="n">cont</span><span class="o">=</span><span class="n">session</span><span class="o">.</span><span class="n">counter</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="id5">
-<h2>Contar visitantes<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Visão default/index</p></li>
-</ul>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-
-  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-
-  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-
-    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>{{=msg}}<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-
-    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Visitantes: {{=cont}}<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-
-  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Visitantes diferentes possuem contadores diferentes</p></li>
-</ul>
-</div>
-<div class="section" id="duas-paginas">
-<h2>Duas páginas<a class="headerlink" href="#duas-paginas" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Iremos criar duas páginas</p></li>
-<li><p>A primeira solicita o nome em um formulário</p></li>
-<li><p>Seremos então redirecionados para a segunda</p></li>
-<li><p>A segunda irá dar uma saudação com o nome</p></li>
-</ul>
-</div>
-<div class="section" id="id6">
-<h2>Duas páginas<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Incluir no controlador default.py</p></li>
-</ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">primeira</span><span class="p">():</span>
-
-  <span class="k">return</span> <span class="nb">dict</span><span class="p">()</span>
-
-<span class="k">def</span> <span class="nf">segunda</span><span class="p">():</span>
-
-  <span class="k">return</span> <span class="nb">dict</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="id7">
-<h2>Duas páginas<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Criar a visão default/primeira</p></li>
-</ul>
-<p>{{extend ‘layout.html’}}</p>
-<p>Qual é o seu nome?</p>
-<p>&lt;form action=”segunda”&gt;</p>
-<p>&lt;input name=”nome” /&gt;</p>
-<p>&lt;input type=”submit” /&gt;</p>
-<p>&lt;/form&gt;</p>
-</div>
-<div class="section" id="id8">
-<h2>Duas páginas<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Criar a visão default/segunda</p></li>
-</ul>
-<p>{{extend ‘layout.html’}}</p>
-<p>&lt;h1&gt;Olá {{=request.vars.nome}}&lt;/h1&gt;</p>
-</div>
-<div class="section" id="appliances">
-<h2>Appliances<a class="headerlink" href="#appliances" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="http://www.web2py.com/appliances">Web2py Appliances</a></p></li>
-<li><p>Email Contact Form</p></li>
-<li><p>Sudoku Solver</p></li>
-<li><p>Train Counter Game</p></li>
-<li><p>Quiz Builder</p></li>
-<li><p>EcardsOnMap (é grande…)</p></li>
-</ul>
-<script type="text/javascript">
-    function lecture24_disqus(source) {
-        if (window.DISQUS) {
-
-            $('#disqus_thread').insertAfter(source); //put the DIV for the Disqus box after the link
-
-            //if Disqus exists, call it's reset method with new parameters
-            DISQUS.reset({
-                reload: true,
-                config: function () {
-                    this.page.identifier = 'lecture24_' + eBookConfig.course;
-                    this.page.url = 'https://lecture24_'+eBookConfig.course+'.interactivepython.com/#!';
-                }
-            });
-
-        } else {
-            //insert a wrapper in HTML after the relevant "show comments" link
-            $('<div id="disqus_thread"></div>').insertAfter(source);
-
-            // set Disqus required vars
-            disqus_shortname = 'pyzombis';
-            disqus_identifier = 'lecture24_' + eBookConfig.course;
-            disqus_url = 'http://lecture24_'+eBookConfig.course+'.interactivepython.com/#!';
-
-            //append the Disqus embed script to HTML
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
-            $('head').append(dsq);
-
-        }
-    }
-</script>
-
-<a href="#disqus_thread" class='disqus_thread_link' data-disqus-identifier="lecture24" onclick="lecture24_disqus(this);">Show Comments</a>
-<script type='text/javascript'>
-    $("a[data-disqus-identifier='lecture24']").attr('data-disqus-identifier', 'lecture24_' + eBookConfig.course);
-</script>
+myTests().main()
+</textarea>
 </div>
 </div>
 
@@ -604,26 +687,26 @@
   
       
 <ul>
-  <li id="relations-prev" class="navLink" title='Previous Section - Pygame' data-toggle="tooltip">
-    <a href="TWP60.html" aria-label="Pygame">
+  <li id="relations-prev" class="navLink" title='Previous Section - Quiz - 6' data-toggle="tooltip">
+    <a href="Quiz6.html" aria-label="Quiz - 6">
         <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
             <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
         </div>
     </a>
   </li>
 </ul>
-  <a class="navLinkBg" id="navLinkBgLeft"  href="TWP60.html" aria-label="Pygame"></a>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="Quiz6.html" aria-label="Quiz - 6"></a>
   
 <ul>
-  <li id="relations-next" class="navLink" title='Next Section - Quiz - 6' data-toggle="tooltip" >
-    <a href="../quiz/Quiz6.html" aria-label="Quiz - 6">
+  <li id="relations-next" class="navLink" title='Next Section - Quiz - 9' data-toggle="tooltip" >
+    <a href="Quiz9.html" aria-label="Quiz - 9">
       <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
           <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
       </div>
     </a>
   </li>
 </ul>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="../quiz/Quiz6.html" aria-label="Quiz - 6">Next Section - Quiz - 6</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="Quiz9.html" aria-label="Quiz - 9">Next Section - Quiz - 9</a>
 
 <script type="text/javascript">
 
