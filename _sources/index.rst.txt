@@ -31,10 +31,10 @@ Contents:
    lectures/TWP58
    lectures/TWP60
    lectures/TWP65
-   quiz/Quiz6.rst
-   quiz/Quiz7.rst
-   quiz/Quiz9.rst
-   quiz/Quiz10.rst
+   quiz/Quiz6
+   quiz/Quiz7
+   quiz/Quiz9
+   quiz/Quiz10
 
 ==================
 Indices and tables
