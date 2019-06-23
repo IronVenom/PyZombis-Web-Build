@@ -1,0 +1,14 @@
+127.0.0.1 - - [23/Jun/2019 16:59:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jun/2019 16:59:10] "GET /_static/basic.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jun/2019 16:59:10] "GET /_static/pygments.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jun/2019 16:59:10] "GET /_static/bootstrap-sphinx.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jun/2019 16:59:10] "GET /_static/documentation_options.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jun/2019 16:59:10] "GET /_static/language_data.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jun/2019 16:59:14] "GET /quiz/Quiz6.html HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jun/2019 16:59:14] "GET /_static/basic.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jun/2019 16:59:14] "GET /_static/pygments.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jun/2019 16:59:14] "GET /_static/bootstrap-sphinx.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jun/2019 16:59:14] "GET /_static/documentation_options.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jun/2019 16:59:14] "GET /_static/language_data.js HTTP/1.1" 200 -
+
+Aborted!
