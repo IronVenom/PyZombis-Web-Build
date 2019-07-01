@@ -9,6 +9,15 @@ Variáveis e Entrada de Dados
    :align: center
    :alt: 
 
+
+
+.. youtube:: 6La690qlH5w
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 Primeiro programa
 =================
 
@@ -26,6 +35,13 @@ Primeiro programa
 .. codelens:: Example_1
     
     print("Primeria mensagem")
+
+
+.. youtube:: GpbkVHV8_64
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 Primeira mensagem de erro
@@ -203,6 +219,13 @@ Conceitos de variáveis e atribuição
     a = 2
     b = 3
     print(a+b)
+
+
+.. youtube:: 9srd0tYvqv8
+      :height: 315
+      :width: 560
+      :align: center
+
 
 Conceitos de variáveis e atribuição
 ===================================
@@ -392,6 +415,14 @@ Operadores relacionais
    >=       maior ou igual >=
    <=       menor ou igual <=
    ======== ============== ==================
+
+
+
+.. youtube:: d6XyTLkTYJo
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 Exemplos: 
@@ -631,6 +662,13 @@ Concatenação
     print(a*3)
 
 
+.. youtube:: WqiKtAynpI0
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 Composição
 ==========
 
@@ -646,6 +684,14 @@ Composição
     
     idade = 20
     print("Joã tem %d anos"%idade)
+
+
+
+.. youtube:: dhtEDVw5EFM
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 Composição
@@ -744,6 +790,14 @@ Alteração de variáveis com o tempo
     print(dívida)
 
 
+
+.. youtube:: nvuWPGKiVtU
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 Teste de mesa ou simulação
 ==========================
 
@@ -783,6 +837,11 @@ Não tenha pressa para o teste de mesa
 Entrada de Dados
 ================
 
+
+.. youtube:: mubJU5dHyP8
+      :height: 315
+      :width: 560
+      :align: center
 
 
 + Até agora nossos programas trabalharam com valores conhecidos
@@ -830,6 +889,14 @@ Erro comum
    :align: center
    :alt: 
 
+
+.. youtube:: Bogfujj2jtk
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 Lista de Exercícios
 ===================
 
@@ -840,53 +907,8 @@ Lista de Exercícios
    :align: center
    :alt: 
 
-Links de Palestras em Vídeo:
-============================
 
-.. youtube:: 6La690qlH5w
-      :height: 315
-      :width: 560
-      :align: center
 
-.. youtube:: GpbkVHV8_64
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: 9srd0tYvqv8
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: d6XyTLkTYJo
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: dhtEDVw5EFM
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: WqiKtAynpI0
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: nvuWPGKiVtU
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: mubJU5dHyP8
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: Bogfujj2jtk
-      :height: 315
-      :width: 560
-      :align: center
 
 .. disqus::
    :shortname: pyzombis

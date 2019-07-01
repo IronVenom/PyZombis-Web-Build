@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Revisão Funções &#8212; Runestone Interactive Overview</title>
+    <title>Recursion &#8212; Runestone Interactive Overview</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -106,8 +106,8 @@
     <script type="text/javascript" src="../_static/presenter_mode.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Revisão Listas" href="TWP37.html" />
-    <link rel="prev" title="Revisão Strings" href="TWP33.html" />
+    <link rel="next" title="Classes e Objetos" href="TWP25.html" />
+    <link rel="prev" title="Arquivos e Dicionários" href="TWP23.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0' name='viewport' />
@@ -265,7 +265,7 @@
             <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
             <li class="divider"></li>
             <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
-            <li><a href='/runestone/default/reportabug?course=PyZombis&page=TWP35'>Report A Problem</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombis&page=Recursion'>Report A Problem</a></li>
           </ul>
         </li>
         <!-- end help menu dropdown -->
@@ -286,17 +286,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Revisão Funções</a><ul>
-<li><a class="reference internal" href="#sejamos-mais-organizados">Sejamos mais organizados</a></li>
-<li><a class="reference internal" href="#id1">Sejamos mais organizados</a></li>
-<li><a class="reference internal" href="#sejamos-organizados">Sejamos organizados</a></li>
-<li><a class="reference internal" href="#o-starbuzz-esta-sem-graos">O Starbuzz está sem grãos</a></li>
-<li><a class="reference internal" href="#sugestao-de-novo-programa">Sugestão de novo programa</a></li>
-<li><a class="reference internal" href="#programa-feio">Programa feio…</a></li>
-<li><a class="reference internal" href="#funcoes">Funções</a></li>
-<li><a class="reference internal" href="#nao-existem-perguntas-idiotas">Não existem perguntas idiotas</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#">Recursion</a></li>
 </ul>
 </ul>
 </li>
@@ -304,14 +294,14 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Revisão Strings" data-toggle="tooltip">
-    <a href="TWP33.html" >
+  <li id="relations-prev" title="Previous Chapter - Arquivos e Dicionários" data-toggle="tooltip">
+    <a href="TWP23.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Revisão Listas' data-toggle="tooltip" >              
-    <a href="TWP37.html" >
+  <li id="relations-next" title='Next Chapter - Classes e Objetos' data-toggle="tooltip" >              
+    <a href="TWP25.html" >
         <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
   </li>
@@ -341,220 +331,51 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="revisao-funcoes">
-<h1>Revisão Funções<a class="headerlink" href="#revisao-funcoes" title="Permalink to this headline">¶</a></h1>
-<a class="reference internal image-reference" href="../_images/TWP10_001.jpeg"><img alt="" class="align-center" src="../_images/TWP10_001.jpeg" style="width: 9.258cm; height: 14.925cm;" /></a>
+  <div class="section" id="recursion">
+<h1>Recursion<a class="headerlink" href="#recursion" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../_images/TWP05_001.jpeg"><img alt="" class="align-center" src="../_images/TWP05_001.jpeg" style="width: 9.2cm; height: 14.832cm;" /></a>
 
     <div class="runestone" style="margin-left: auto; margin-right:auto">
-        <div id="VxQBUPE6HbA_vid" class="align-center youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="VxQBUPE6HbA" data-video-divid="VxQBUPE6HbA_vid" data-video-start="0" data-video-end="-1" ></div>
+        <div id="dV7u_MspoKs_vid" class="align-center youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="dV7u_MspoKs" data-video-divid="dV7u_MspoKs_vid" data-video-start="0" data-video-end="-1" ></div>
     </div>
-    <div class="section" id="sejamos-mais-organizados">
-<h2>Sejamos mais organizados<a class="headerlink" href="#sejamos-mais-organizados" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP35_001.jpeg"><img alt="" class="align-center" src="../_images/TWP35_001.jpeg" style="width: 17.801cm; height: 13.35cm;" /></a>
-</div>
-<div class="section" id="id1">
-<h2>Sejamos mais organizados<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP35_002.jpeg"><img alt="" class="align-center" src="../_images/TWP35_002.jpeg" style="width: 16.601cm; height: 14.064cm;" /></a>
-</div>
-<div class="section" id="sejamos-organizados">
-<h2>Sejamos organizados<a class="headerlink" href="#sejamos-organizados" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Quando os programas crescem, geralmente o código fica mais complexo</p></li>
-<li><p>Uma forma de gerenciar essa complexidade é usar funções</p></li>
-<li><p>Elas permitem separar ações comuns, assim seu código fica mais fácil
-de ler e mais fácil de manter</p></li>
-</ul>
-</div>
-<div class="section" id="o-starbuzz-esta-sem-graos">
-<h2>O Starbuzz está sem grãos<a class="headerlink" href="#o-starbuzz-esta-sem-graos" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>O diretor da Starbuzz quer uma opção para compra rápida, sem esperar
-abaixar o preço</p></li>
-<li><p>Ao rodar o programa irei perguntar se quer comprar já ou não</p></li>
-<li><p>Se o usuário responder sim, então irei pegar o preço atual e comprar</p></li>
-<li><p>Caso negativo, irei esperar abaixar para menos que 4.74</p></li>
-</ul>
-</div>
-<div class="section" id="sugestao-de-novo-programa">
-<h2>Sugestão de novo programa<a class="headerlink" href="#sugestao-de-novo-programa" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">urllib.request</span>
-<span class="kn">import</span> <span class="nn">time</span>
-<span class="n">opcao</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Deseja comprar ja? (S/N)&#39;</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">opcao</span> <span class="o">==</span> <span class="s1">&#39;S&#39;</span><span class="p">:</span>
-   <span class="n">pagina</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://beans.itcarlow.ie/prices-loyalty.html&#39;</span><span class="p">)</span>
-   <span class="n">texto</span> <span class="o">=</span> <span class="n">pagina</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
-   <span class="n">onde</span> <span class="o">=</span> <span class="n">texto</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;&gt;$&#39;</span><span class="p">)</span>
-   <span class="n">inicio</span> <span class="o">=</span> <span class="n">onde</span> <span class="o">+</span> <span class="mi">2</span>
-   <span class="n">fim</span> <span class="o">=</span> <span class="n">inicio</span> <span class="o">+</span> <span class="mi">4</span>
-   <span class="n">preco</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">texto</span><span class="p">[</span><span class="n">inicio</span><span class="p">:</span><span class="n">fim</span><span class="p">])</span>
-   <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Comprar! Preco: </span><span class="si">%5.2f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">preco</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-   <span class="n">preco</span> <span class="o">=</span> <span class="mf">99.99</span>
-   <span class="k">while</span> <span class="n">preco</span> <span class="o">&gt;=</span> <span class="mf">4.74</span><span class="p">:</span>
-     <span class="n">pagina</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://beans.itcarlow.ie/prices-loyalty.html&#39;</span><span class="p">)</span>
-     <span class="n">texto</span> <span class="o">=</span> <span class="n">pagina</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
-     <span class="n">onde</span> <span class="o">=</span> <span class="n">texto</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;&gt;$&#39;</span><span class="p">)</span>
-     <span class="n">inicio</span> <span class="o">=</span> <span class="n">onde</span> <span class="o">+</span> <span class="mi">2</span>
-     <span class="n">fim</span> <span class="o">=</span> <span class="n">inicio</span> <span class="o">+</span> <span class="mi">4</span>
-     <span class="n">preco</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">texto</span><span class="p">[</span><span class="n">inicio</span><span class="p">:</span><span class="n">fim</span><span class="p">])</span>
-     <span class="k">if</span> <span class="n">preco</span> <span class="o">&gt;=</span> <span class="mf">4.74</span><span class="p">:</span>
-       <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">600</span><span class="p">)</span>
-   <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Comprar! Preco: 5.2</span><span class="si">%f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">preco</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="programa-feio">
-<h2>Programa feio…<a class="headerlink" href="#programa-feio" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Não duplique seu código…</p></li>
-<li><p>Isso leva ao excesso de código, tornando a manutenção do seu código
-difícil</p></li>
-<li><p>Procure reutilizar seu código</p></li>
-<li><p>Definindo funções faremos reuso de código</p></li>
-<li><p>Qual é a diferença?</p></li>
-<li><p>Se eu tiver que mudar algo, irei alterar em apenas um lugar</p></li>
-</ul>
-</div>
-<div class="section" id="funcoes">
-<h2>Funções<a class="headerlink" href="#funcoes" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Funções são códigos compartilháveis</p></li>
-<li><p>Defino um nome e chamo a função ao longo do programa</p></li>
-<li><p>A função deve ser definida antes de você chamá-la</p></li>
-<li><p>Se você quiser retornar um valor para quem chamou a função deverá
-utilizar o comando return</p></li>
-</ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">urllib.request</span>
-<span class="kn">import</span> <span class="nn">time</span>
-
-<span class="k">def</span> <span class="nf">pega_preco</span><span class="p">():</span>
-   <span class="n">pagina</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://beans.itcarlow.ie/prices-loyalty.html&#39;</span><span class="p">)</span>
-   <span class="n">texto</span> <span class="o">=</span> <span class="n">pagina</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
-   <span class="n">onde</span> <span class="o">=</span> <span class="n">texto</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;&gt;$&#39;</span><span class="p">)</span>
-   <span class="n">inicio</span> <span class="o">=</span> <span class="n">onde</span> <span class="o">+</span> <span class="mi">2</span>
-   <span class="n">fim</span> <span class="o">=</span> <span class="n">inicio</span> <span class="o">+</span> <span class="mi">4</span>
-   <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">texto</span><span class="p">[</span><span class="n">inicio</span><span class="p">:</span><span class="n">fim</span><span class="p">])</span>
-
-<span class="n">opcao</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Deseja comprar ja? (S/N)&#39;</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">opcao</span> <span class="o">==</span> <span class="s1">&#39;S&#39;</span><span class="p">:</span>
-   <span class="n">preco</span> <span class="o">=</span> <span class="n">pega_preco</span><span class="p">()</span>
-   <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Comprar! Preco: </span><span class="si">%5.2f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">preco</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-   <span class="n">preco</span> <span class="o">=</span> <span class="mf">99.99</span>
-   <span class="k">while</span> <span class="n">preco</span> <span class="o">&gt;=</span> <span class="mf">4.74</span><span class="p">:</span>
-     <span class="n">preco</span> <span class="o">=</span> <span class="n">pega_preco</span><span class="p">()</span>
-     <span class="k">if</span> <span class="n">preco</span> <span class="o">&gt;=</span> <span class="mf">4.74</span><span class="p">:</span>
-       <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">600</span><span class="p">)</span>
-   <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Comprar! Preco: 5.2</span><span class="si">%f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">preco</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="nao-existem-perguntas-idiotas">
-<h2>Não existem perguntas idiotas<a class="headerlink" href="#nao-existem-perguntas-idiotas" title="Permalink to this headline">¶</a></h2>
-
+    
     <div class="runestone" style="margin-left: auto; margin-right:auto">
-        <div id="EKCo0qcVYQU_vid" class="align-center youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="EKCo0qcVYQU" data-video-divid="EKCo0qcVYQU_vid" data-video-start="0" data-video-end="-1" ></div>
+        <div id="3wM5NqY7a3E_vid" class="align-center youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="3wM5NqY7a3E" data-video-divid="3wM5NqY7a3E_vid" data-video-start="0" data-video-end="-1" ></div>
     </div>
-    <ul class="simple">
-<li><p>O comando return é igual ao print? Não, print exibe algo na tela,
-enquanto return devolve um valor para quem chamou a função.</p></li>
-<li><p>Se eu não der return dentro da função, o que ela retorna? None</p></li>
-<li><p>Return sempre deve vir no final da função? Nem sempre, depende da
-lógica da função</p></li>
-<li><p>Uma função pode devolver mais de um valor? Sim, inclusive listas ou
-dicionários.</p></li>
-</ul>
-<a class="reference internal image-reference" href="../_images/TWP35_005.jpeg"><img alt="" class="align-center" src="../_images/TWP35_005.jpeg" style="width: 25.442cm; height: 16.402cm;" /></a>
-<ul class="simple">
-<li><p><a class="reference external" href="http://json.org">JSON</a></p></li>
-<li><p>Independente de linguagem</p></li>
-<li><p>Pares nome/valor</p></li>
-<li><p>Lista ordenada</p></li>
-<li><p>Muito adotado atualmente</p></li>
-<li><p>Alternativa para o XML</p>
-<ul>
-<li><p>XML mais verbosa</p></li>
-<li><p>XML menor legibilidade</p></li>
-</ul>
-</li>
-</ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">urllib.request</span>
-<span class="kn">import</span> <span class="nn">json</span>
-
-<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;http://api.icndb.com/jokes/random?limitTo=[nerdy]&quot;</span>
-<span class="n">resp</span> <span class="o">=</span> <span class="n">urrlib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">][</span><span class="s1">&#39;joke&#39;</span><span class="p">])</span>
-</pre></div>
-</div>
-
+    
     <div class="runestone" style="margin-left: auto; margin-right:auto">
-        <div id="V7c168XpfQ4_vid" class="align-center youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="V7c168XpfQ4" data-video-divid="V7c168XpfQ4_vid" data-video-start="0" data-video-end="-1" ></div>
+        <div id="YTsKxSrTaeQ_vid" class="align-center youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="YTsKxSrTaeQ" data-video-divid="YTsKxSrTaeQ_vid" data-video-start="0" data-video-end="-1" ></div>
     </div>
-    <script type="text/javascript">
-    function lecture11_disqus(source) {
-        if (window.DISQUS) {
-
-            $('#disqus_thread').insertAfter(source); //put the DIV for the Disqus box after the link
-
-            //if Disqus exists, call it's reset method with new parameters
-            DISQUS.reset({
-                reload: true,
-                config: function () {
-                    this.page.identifier = 'lecture11_' + eBookConfig.course;
-                    this.page.url = 'https://lecture11_'+eBookConfig.course+'.interactivepython.com/#!';
-                }
-            });
-
-        } else {
-            //insert a wrapper in HTML after the relevant "show comments" link
-            $('<div id="disqus_thread"></div>').insertAfter(source);
-
-            // set Disqus required vars
-            disqus_shortname = 'pyzombis';
-            disqus_identifier = 'lecture11_' + eBookConfig.course;
-            disqus_url = 'http://lecture11_'+eBookConfig.course+'.interactivepython.com/#!';
-
-            //append the Disqus embed script to HTML
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
-            $('head').append(dsq);
-
-        }
-    }
-</script>
-
-<a href="#disqus_thread" class='disqus_thread_link' data-disqus-identifier="lecture11" onclick="lecture11_disqus(this);">Show Comments</a>
-<script type='text/javascript'>
-    $("a[data-disqus-identifier='lecture11']").attr('data-disqus-identifier', 'lecture11_' + eBookConfig.course);
-</script>
-</div>
-</div>
+    
+    <div class="runestone" style="margin-left: auto; margin-right:auto">
+        <div id="qh4Fl2xTV-s_vid" class="align-center youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="qh4Fl2xTV-s" data-video-divid="qh4Fl2xTV-s_vid" data-video-start="0" data-video-end="-1" ></div>
+    </div>
+    </div>
 
 
   
       
 <ul>
-  <li id="relations-prev" class="navLink" title='Previous Section - Revisão Strings' data-toggle="tooltip">
-    <a href="TWP33.html" aria-label="Revisão Strings">
+  <li id="relations-prev" class="navLink" title='Previous Section - Arquivos e Dicionários' data-toggle="tooltip">
+    <a href="TWP23.html" aria-label="Arquivos e Dicionários">
         <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
             <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
         </div>
     </a>
   </li>
 </ul>
-  <a class="navLinkBg" id="navLinkBgLeft"  href="TWP33.html" aria-label="Revisão Strings"></a>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="TWP23.html" aria-label="Arquivos e Dicionários"></a>
   
 <ul>
-  <li id="relations-next" class="navLink" title='Next Section - Revisão Listas' data-toggle="tooltip" >
-    <a href="TWP37.html" aria-label="Revisão Listas">
+  <li id="relations-next" class="navLink" title='Next Section - Classes e Objetos' data-toggle="tooltip" >
+    <a href="TWP25.html" aria-label="Classes e Objetos">
       <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
           <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
       </div>
     </a>
   </li>
 </ul>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="TWP37.html" aria-label="Revisão Listas">Next Section - Revisão Listas</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="TWP25.html" aria-label="Classes e Objetos">Next Section - Classes e Objetos</a>
 
 <script type="text/javascript">
 

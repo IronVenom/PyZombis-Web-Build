@@ -13,6 +13,13 @@ Condições
 =========
 
 
+.. youtube:: vyRXFoZEaJw
+      :height: 315
+      :width: 560
+      :align: left
+
+
+
 .. codelens:: Example2_1
 
         print("Bem vindo ao meu programa!")
@@ -117,6 +124,14 @@ if
 
 
 
+
+.. youtube:: wuX0ImNSWWQ
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 else
 ====
 
@@ -186,6 +201,15 @@ Estruturas aninhadas
         print("Conta telefonica : R$%6.2f"%(minutos*preco))
 
 
+
+
+.. youtube:: noGG5WgVdoE
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 Estruturas aninhadas
 ====================
 
@@ -225,8 +249,21 @@ Estruturas aninhadas
         print("Conta telefonica : R$%6.2f"%(minutos*preco))
 
 
+
+.. youtube:: ZOIdBqOdBQA
+      :height: 315
+      :width: 560
+      :align: center
+
+
 elif
 ====
+
+
+.. youtube:: pjOJYIzvh3w
+      :height: 315
+      :width: 560
+      :align: center
 
 
 
@@ -251,6 +288,13 @@ Lista de Exercícios “again”
 ===========================
 
 
+.. youtube:: QHwldWkIJ9o
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 .. image:: img/TWP05_041.jpeg
    :height: 12.571cm
    :width: 9.411cm
@@ -259,38 +303,7 @@ Lista de Exercícios “again”
 
 + “A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso se manter em movimento”. - Einstein.
 
-Links de Palestras em Vídeo:
-============================
 
-.. youtube:: vyRXFoZEaJw
-      :height: 315
-      :width: 560
-      :align: left
-
-.. youtube:: wuX0ImNSWWQ
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: noGG5WgVdoE
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: ZOIdBqOdBQA
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: pjOJYIzvh3w
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: QHwldWkIJ9o
-      :height: 315
-      :width: 560
-      :align: center
 
 .. disqus::
    :shortname: pyzombis
