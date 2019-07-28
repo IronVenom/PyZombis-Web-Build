@@ -1,5 +1,5 @@
 ================================================
-Welcome to PyZombis : A Python Course in Spanish
+PyZombis : A Python Course
 ================================================
 
 Contents:
