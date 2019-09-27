@@ -1,5 +1,5 @@
-# PyZombis-Web-Build
-A static website for the PyZombis Project -https://ironvenom.github.io [GSoC 2019]
+# Google Summer of Code 2019 Project 
+A static website for the PyZombis Project -https://ironvenom.github.io 
 
 Tasks completed:
 
