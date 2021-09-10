@@ -1,7 +1,7 @@
 # Google Summer of Code 2019 Project 
-A static website for the PyZombis Project -https://ironvenom.github.io 
+A static website for the PyZombis Project - https://ironvenom.github.io/PyZombis-Web-Build/index.html
 
-Tasks completed:
+### Tasks completed:
 
 * Used Sphinx and Runestone Framework extensively to create .rst files for lectures containing dynamic and responsive examples and demonstrations and comment boxes.
 * Embedded videos from the original course in the lecture files as well using YouTube components of Runestone.
